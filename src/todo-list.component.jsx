@@ -1,6 +1,7 @@
 import React from 'react';
 import Todo from "./todo.component";
 import NewTodoForm from './new-todo-form.component';
+import "./todo-list.styles.css";
 
 //with create = (newTodo) => { you dont need to bind this
 
@@ -60,11 +61,10 @@ class TodoList extends React.Component {
       );
     })
     return (
-      <div>
-        <h1>Todo List!</h1>
-        <ul>{todos}
-        </ul>
+      <div className="TodoList">
+        <h1>Todo List! <span>A simple React Todo List App.</span></h1>
         <NewTodoForm createTodo={this.create} />
+        <ul>{todos}</ul>
       </div>
     )
   }
