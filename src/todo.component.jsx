@@ -2,6 +2,9 @@ import React from "react";
 import "./todo.styles.css"
 
 //const Todo = ({ task }) => destructured from const Todo = ( props )
+//parent: todo-list
+/*received props: key={todo.id}, id={todo.id}, task={todo.task}, completed={todo.completed}, 
+  removeTodo={this.remove}, updateTodo={this.update}, toggleTodo={this.toggleCompletion}*/
 
 class Todo extends React.Component {
   constructor(props) {
